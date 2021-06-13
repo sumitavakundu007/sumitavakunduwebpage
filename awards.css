@@ -1,0 +1,59 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* Media Queries: Mobile */
+@media only screen and (max-width:767px) {
+    #awards_and_recog{
+        padding: 10px 30px 30px;
+    }
+    #awards_and_recog h2{
+        margin-left: 0px;
+        color: #4f545d;
+        font-size: 20px;
+    }
+    #awards_and_recog li{
+        margin-left: 20px;
+        padding-top: 10px;
+        font-size: 14px;
+    }
+}
+
+/* Media Queries: Tablet */
+@media only screen and (min-width:768px) and (max-width:1099px) {
+    #awards_and_recog{
+        padding: 30px 50px 50px;
+    }
+    #awards_and_recog h2{
+        margin-left: 0px;
+        color: #4f545d;
+        font-size: 30px;
+    }
+    #awards_and_recog li{
+        margin-left: 20px;
+        padding-top: 10px;
+        font-size: 18px;
+    }
+}
+
+/* Media Queries: Laptop */
+@media only screen and (min-width:1100px) {
+    #awards_and_recog{
+        padding: 50px 80px 50px;
+    }
+    #awards_and_recog h2{
+        margin-left: 0px;
+        color: #4f545d;
+        font-size: 30px;
+    }
+    #awards_and_recog li{
+        margin-left: 20px;
+        padding-top: 10px;
+        font-size: 20px;
+    }
+}

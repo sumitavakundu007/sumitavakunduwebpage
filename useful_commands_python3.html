@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
+<meta name="HandheldFriendly" content="true">
+<title>SumitavaKunduWebpage</title>
+<link rel="stylesheet" href="useful_commands_python3.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Berkshire Swash' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Arapey' rel='stylesheet'>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <section id="section_id">
+        <h1>Insatll python-3.6.X from source code</h1>
+        <p>Download python-3.6.X.tar.xz from official website (<a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a>) and move that to the "source_root" directory, say 'softwares'</p>
+        <div class="commands">$ cd softwares</div>
+        <p>Unzip it in the same directory</p>
+        <div class="commands">$ tar -xvf Python-3.6.X.tar.xz</div>
+        <p>Configure the build in a different directory or the same ditrectory, call it 'build-location'</p>
+        <div class="commands">$ cd /sofwares/Python-3.6.X</div>
+        <div class="commands">$ ./configure --prefix=build-location --exec-prefix=build-location</div>
+        <p>Build the source</p>
+        <div class="commands">$ make -j2</div>
+        <p>Install the binaries</p>
+        <div class="commands">$ make install</div>
+        <p>you can set the PYTHONPATH in the .bashrc file, otherwise you have to specify the full directory of python binaries to execute python3.X i.e. build-location/bin/python3.X</p>
+        <p>pip (python2) or pip3 (python3) is automatically installed inside the bin directory. Install numpy, scipy in that directory</p>
+        <div class="commands">$ build-location/bin/python3.X/bin/pip3 install numpy/python-numpy</div>
+        <div class="commands">$ build-location/bin/python3.X/bin/pip3 install scipy/python-scipy</div>
+        <p>Check the pip3 version</p>
+        <div class="commands">$ build-location/bin/python3.X/bin/pip3 --version</div>
+        <p>Check the numpy and scipy version</p>
+        <div class="commands">$ build-location/bin/python3.X</div>
+        <div class="commands">$ >>> import numpy</div>
+        <div class="commands">$ >>> import scipy</div>
+        <div class="commands">$ >>> print(numpy.__version__)</div>
+        <div class="commands">$ >>> print(scipy.__version__)</div>
+    </section>
+</body>
+</html>

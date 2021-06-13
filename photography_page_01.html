@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
+<meta name="HandheldFriendly" content="true">
+<title>SKunduPhotographyWebpage</title>
+<link rel="stylesheet" href="photography_page_01.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Berkshire Swash' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Arapey' rel='stylesheet'>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <section id="photography">
+	    <h1>My clicks</h1>
+		<div class="image-row">
+		  <div class="image-column">
+		    <img src="pics/bhai_phota.jpeg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+		  </div>
+		  <div class="image-column">
+		    <img src="pics/duck.jpeg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+		  </div>
+		  <div class="image-column">
+		    <img src="pics/creature1.jpeg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+		  </div>
+		  <div class="image-column">
+		    <img src="pics/creature2.jpeg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+		  </div>
+		  <div class="image-column">
+		    <img src="pics/tista_river.jpeg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+		  </div>
+		  <div class="image-column">
+		    <img src="pics/kumartuli1.jpeg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+		  </div>
+		  <div class="image-column">
+		    <img src="pics/maidan1.jpeg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+		  </div>
+		  <div class="image-column">
+		    <img src="pics/mosque.jpeg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+		  </div>
+		  <div class="image-column">
+		    <img src="pics/digha1.jpeg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+		  </div>
+		  <div class="image-column">
+		    <img src="pics/talsari.jpeg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+		  </div>
+		  <div class="image-column">
+		    <img src="pics/tajpur.jpeg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+		  </div>
+		</div>
+
+		<div id="myModal" class="modal">
+		  <span class="close cursor" onclick="closeModal()">&times;</span>
+		  <div class="modal-content">
+
+		    <div class="mySlides">
+		      <div class="numbertext">1</div>
+		      <img src="pics/bhai_phota.jpeg" style="width:100%">
+		    </div>
+
+		    <div class="mySlides">
+		      <div class="numbertext">2</div>
+		      <img src="pics/duck.jpeg" style="width:100%">
+		    </div>
+
+		    <div class="mySlides">
+		      <div class="numbertext">3</div>
+		      <img src="pics/creature1.jpeg" style="width:100%">
+		    </div>
+		    
+		    <div class="mySlides">
+		      <div class="numbertext">4</div>
+		      <img src="pics/creature2.jpeg" style="width:100%">
+		    </div>
+			
+			<div class="mySlides">
+		      <div class="numbertext">5</div>
+		      <img src="pics/tista_river.jpeg" style="width:100%">
+		    </div>
+			
+			<div class="mySlides">
+		      <div class="numbertext">6</div>
+		      <img src="pics/kumartuli1.jpeg" style="width:100%">
+		    </div>
+			
+			<div class="mySlides">
+		      <div class="numbertext">7</div>
+		      <img src="pics/maidan1.jpeg" style="width:100%">
+		    </div>
+			
+			<div class="mySlides">
+		      <div class="numbertext">8</div>
+		      <img src="pics/mosque.jpeg" style="width:100%">
+		    </div>
+			
+			<div class="mySlides">
+		      <div class="numbertext">9</div>
+		      <img src="pics/digha1.jpeg" style="width:100%">
+		    </div>
+			
+			<div class="mySlides">
+		      <div class="numbertext">10</div>
+		      <img src="pics/talsari.jpeg" style="width:100%">
+		    </div>
+			
+			<div class="mySlides">
+		      <div class="numbertext">11</div>
+		      <img src="pics/tajpur.jpeg" style="width:100%">
+		    </div>
+		    
+		    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		    <div class="caption-container">
+		      <p id="caption"></p>
+		    </div>
+		  </div>
+		</div>
+	</section>
+	
+	<script>
+	function openModal() {
+		  document.getElementById("myModal").style.display = "block";
+		}
+	function closeModal() {
+		  document.getElementById("myModal").style.display = "none";
+		}
+	var slideIndex = 1;
+	showSlides(slideIndex);
+	function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+	function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+	function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var captionText = document.getElementById("caption");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none";
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		}
+
+	document.getElementsByClassName("PhD")[0].addEventListener("click", function(){
+    window.scrollTo(0, document.querySelector(".phd-research").offsetTop);
+	});
+	document.getElementsByClassName("MSc")[0].addEventListener("click", function(){
+    window.scrollTo(0, document.querySelector(".master-research").offsetTop);
+	});
+	document.getElementsByClassName("BSc")[0].addEventListener("click", function(){
+    window.scrollTo(0, document.querySelector(".bsc-research").offsetTop);
+	});
+</script>
+</body>

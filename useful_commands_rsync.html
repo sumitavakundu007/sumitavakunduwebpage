@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
+<meta name="HandheldFriendly" content="true">
+<title>SumitavaKunduWebpage</title>
+<link rel="stylesheet" href="useful_commands_python3.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Berkshire Swash' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Arapey' rel='stylesheet'>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <section id="section_id">
+        <h1>'rsync' documentation</h1>
+        <p>rsync command is used to sync the files and folders to a directory. It won't copy the already copied files and folders</p>
+        <p>'--max_size' flag will help you to copy the files less than a particular size</p>
+        <p>'--exclude' flag will help you to exclude some particular directories</p>
+        <div class="commands">$ rsync -av --progress --max-size=1g --exclude={'dir3/*', 'file1.txt', 'dir1'} /src username@ip_address:/dest_path</div>
+        <p>Go to your external hard drive path where you want to keep the folders. and rsync from there</p>
+        <div class="commands">$ rsync -av --progress --max-size=1g --exclude={'dir3/*', 'file1.txt', 'dir1'} username@ip_address:/src_path .</div>
+    </section>
+</body>
+</html>

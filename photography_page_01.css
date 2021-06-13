@@ -1,0 +1,532 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Media Queries: Mobile */
+@media only screen and (max-width:767px) {
+	#photography
+	{
+		color: #555;
+		padding-top: 20px;
+		padding-bottom: 50px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	#photography h1{
+		padding-left: 0px;
+		font-size: 20px
+	}
+	#photography .btn
+	{
+		margin-left: 15%;
+		margin-top: 20px;
+		margin-bottom: 30px;
+		-webkit-transition-duration: 0.1s;
+		margin-right: 50px;
+		padding: 5px;
+	}
+
+	#photography .btn-primary
+	{
+		background-color: #39398A;
+		border: none;
+		font-size: 12px;
+	}
+
+	#photography .btn-primary:hover
+	{
+		background-color: #609188;
+	}
+
+	#photography .album 
+	{
+		color: #555;
+		text-align: left;
+		font-family: "Times New Roman", Times, serif;
+		font-size: 20px;
+		padding-top: 20px;
+		font-weight: bold;
+	    margin-bottom: 10px;
+	}
+
+	#photography .album .fa
+	{
+	  color: #42424B;
+	  font-weight: bold;
+	  margin-right: 20px;
+	}
+	#photography .image-row{
+		padding-top: 20px;
+	}
+	.image-column {
+	  width: 70%;
+	  margin-right: auto;
+	  margin-left: auto;
+	  margin-bottom: 10px;
+	}
+
+	/* The Modal (background) */
+	.modal {
+	  display: none;
+	  position: fixed;
+	  z-index: 1;
+	  padding-top: 100px;
+	  left: 0;
+	  top: 0;
+	  width: 100%;
+	  height: 100%;
+	  overflow: auto;
+	  background-color: black;
+	}
+
+	/* Modal Content */
+	.modal-content {
+	  position: relative;
+	  background-color: #fefefe;
+	  margin: auto;
+	  padding: 0;
+	  width: 90%;
+	  max-width: 70%;
+	  height: auto;
+	}
+
+	#photography .close {
+	  color: white;
+	  position: absolute;
+	  top: 10px;
+	  right: 25px;
+	  font-size: 35px;
+	  font-weight: bold;
+	}
+
+	#photography .close:hover,
+	.close:focus {
+	  color: #999;
+	  text-decoration: none;
+	  cursor: pointer;
+	}
+
+	.mySlides {
+	  display: none;
+	}
+
+	.cursor {
+	  cursor: pointer;
+	}
+
+	.prev,
+	.next {
+	  cursor: pointer;
+	  position: absolute;
+	  top: 50%;
+	  width: auto;
+	  padding: 16px;
+	  margin-top: -50px;
+	  color: white;
+	  font-weight: bold;
+	  font-size: 10px;
+	  transition: 0.6s ease;
+	  border-radius: 0 3px 3px 0;
+	  user-select: none;
+	  -webkit-user-select: none;
+	}
+
+	/* Position the "next button" to the right */
+	.next {
+	  right: 0;
+	  border-radius: 3px 0 0 3px;
+	}
+
+	/* On hover, add a black background color with a little bit see-through */
+	.prev:hover,
+	.next:hover {
+	  background-color: rgba(0, 0, 0, 0.8);
+	}
+
+	/* Number text (1/3 etc) */
+	.numbertext {
+	  color: #f2f2f2;
+	  font-size: 12px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  top: 0;
+	}
+
+	img {
+	  margin-bottom: 4px;
+	}
+
+	/* First album */
+	.caption-container {
+	  text-align: center;
+	  background-color: black;
+	  padding: 2px 16px;
+	  color: white;
+	}
+
+	img.hover-shadow {
+	  transition: 0.1s;
+	}
+
+	.hover-shadow:hover {
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+}
+
+/* Media Queries: Tablet */
+@media only screen and (min-width:768px) and (max-width:1099px) {
+	/*------------Photography-------------*/
+	#photography
+	{
+		color: #555;
+		padding-top: 50px;
+		padding-bottom: 80px;
+		padding-left: 80px;
+		padding-right: 50px;
+	}
+	#photography h1{
+		padding-left: 0px;
+	}
+	#photography .btn
+	{
+		margin-left: 10px;
+		margin-top: 20px;
+		margin-bottom: 30px;
+		-webkit-transition-duration: 0.1s;
+		margin-right: 50px;
+		padding: 10px;
+	}
+
+	#photography .btn-primary
+	{
+		background-color: #39398A;
+		border: none;
+	}
+
+	#photography .btn-primary:hover
+	{
+		background-color: #609188;
+	}
+
+	#photography .album 
+	{
+		color: #555;
+		text-align: left;
+		font-family: "Times New Roman", Times, serif;
+		font-size: 25px;
+		padding-top: 20px;
+		font-weight: bold;
+	    margin-bottom: 10px;
+	}
+
+	#photography .album .fa
+	{
+	  color: #42424B;
+	  font-weight: bold;
+	  margin-right: 20px;
+	}
+
+	.image-row > .image-column {
+	  padding: 15px 10px;
+	}
+
+	.image-row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	.image-column {
+	  float: left;
+	  width: 25%;
+	}
+
+	/* The Modal (background) */
+	.modal {
+	  display: none;
+	  position: fixed;
+	  z-index: 1;
+	  padding-top: 100px;
+	  left: 0;
+	  top: 0;
+	  width: 100%;
+	  height: 100%;
+	  overflow: auto;
+	  background-color: black;
+	}
+
+	/* Modal Content */
+	.modal-content {
+	  position: relative;
+	  background-color: #fefefe;
+	  margin: auto;
+	  padding: 0;
+	  width: 90%;
+	  max-width: 50%;
+	  height: auto;
+	}
+
+	#photography .close {
+	  color: white;
+	  position: absolute;
+	  top: 10px;
+	  right: 25px;
+	  font-size: 35px;
+	  font-weight: bold;
+	}
+
+	#photography .close:hover,
+	.close:focus {
+	  color: #999;
+	  text-decoration: none;
+	  cursor: pointer;
+	}
+
+	.mySlides {
+	  display: none;
+	}
+
+	.cursor {
+	  cursor: pointer;
+	}
+
+	.prev,
+	.next {
+	  cursor: pointer;
+	  position: absolute;
+	  top: 50%;
+	  width: auto;
+	  padding: 16px;
+	  margin-top: -50px;
+	  color: white;
+	  font-weight: bold;
+	  font-size: 20px;
+	  transition: 0.6s ease;
+	  border-radius: 0 3px 3px 0;
+	  user-select: none;
+	  -webkit-user-select: none;
+	}
+
+	/* Position the "next button" to the right */
+	.next {
+	  right: 0;
+	  border-radius: 3px 0 0 3px;
+	}
+
+	/* On hover, add a black background color with a little bit see-through */
+	.prev:hover,
+	.next:hover {
+	  background-color: rgba(0, 0, 0, 0.8);
+	}
+
+	/* Number text (1/3 etc) */
+	.numbertext {
+	  color: #f2f2f2;
+	  font-size: 12px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  top: 0;
+	}
+
+	img {
+	  margin-bottom: 4px;
+	}
+
+	/* First album */
+	.caption-container {
+	  text-align: center;
+	  background-color: black;
+	  padding: 2px 16px;
+	  color: white;
+	}
+
+	img.hover-shadow {
+	  transition: 0.1s;
+	}
+
+	.hover-shadow:hover {
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+}
+
+/* Media Queries: Laptop */
+@media only screen and (min-width:1100px) {
+	/*-------------------------------photography--------------------------------*/
+	#photography
+	{
+		color: #555;
+		padding-top: 50px;
+		padding-bottom: 80px;
+		padding-left: 80px;
+		padding-right: 50px;
+	}
+	#photography h1{
+		padding-left: 0px;
+	}
+	#photography .btn
+	{
+		margin-left: 10px;
+		margin-top: 20px;
+		margin-bottom: 30px;
+		-webkit-transition-duration: 0.1s;
+		margin-right: 50px;
+		padding: 10px;
+	}
+
+	#photography .btn-primary
+	{
+		background-color: #39398A;
+		border: none;
+	}
+
+	#photography .btn-primary:hover
+	{
+		background-color: #609188;
+	}
+
+	#photography .album 
+	{
+		color: #555;
+		text-align: left;
+		font-family: "Times New Roman", Times, serif;
+		font-size: 25px;
+		padding-top: 20px;
+		font-weight: bold;
+	    margin-bottom: 10px;
+	}
+
+	#photography .album .fa
+	{
+	  color: #42424B;
+	  font-weight: bold;
+	  margin-right: 20px;
+	}
+
+	.image-row > .image-column {
+	  padding: 15px 10px;
+	}
+
+	.image-row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	.image-column {
+	  float: left;
+	  width: 25%;
+	}
+
+	/* The Modal (background) */
+	.modal {
+	  display: none;
+	  position: fixed;
+	  z-index: 1;
+	  padding-top: 100px;
+	  left: 0;
+	  top: 0;
+	  width: 100%;
+	  height: 100%;
+	  overflow: auto;
+	  background-color: black;
+	}
+
+	/* Modal Content */
+	.modal-content {
+	  position: relative;
+	  background-color: #fefefe;
+	  margin: auto;
+	  padding: 0;
+	  width: 90%;
+	  max-width: 50%;
+	  height: auto;
+	}
+
+	#photography .close {
+	  color: white;
+	  position: absolute;
+	  top: 10px;
+	  right: 25px;
+	  font-size: 35px;
+	  font-weight: bold;
+	}
+
+	#photography .close:hover,
+	.close:focus {
+	  color: #999;
+	  text-decoration: none;
+	  cursor: pointer;
+	}
+
+	.mySlides {
+	  display: none;
+	}
+
+	.cursor {
+	  cursor: pointer;
+	}
+
+	.prev,
+	.next {
+	  cursor: pointer;
+	  position: absolute;
+	  top: 50%;
+	  width: auto;
+	  padding: 16px;
+	  margin-top: -50px;
+	  color: white;
+	  font-weight: bold;
+	  font-size: 20px;
+	  transition: 0.6s ease;
+	  border-radius: 0 3px 3px 0;
+	  user-select: none;
+	  -webkit-user-select: none;
+	}
+
+	/* Position the "next button" to the right */
+	.next {
+	  right: 0;
+	  border-radius: 3px 0 0 3px;
+	}
+
+	/* On hover, add a black background color with a little bit see-through */
+	.prev:hover,
+	.next:hover {
+	  background-color: rgba(0, 0, 0, 0.8);
+	}
+
+	/* Number text (1/3 etc) */
+	.numbertext {
+	  color: #f2f2f2;
+	  font-size: 12px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  top: 0;
+	}
+
+	img {
+	  margin-bottom: 4px;
+	}
+
+	/* First album */
+	.caption-container {
+	  text-align: center;
+	  background-color: black;
+	  padding: 2px 16px;
+	  color: white;
+	}
+
+	img.hover-shadow {
+	  transition: 0.1s;
+	}
+
+	.hover-shadow:hover {
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+}
